@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+}
+
+.main {
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.container {
+    background: #1f8aa5;
+    padding: 10px;
+}
+
+textarea#checkGSM {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+h2, h3, h4, h6 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+span.uc {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 5px;
+    color: #000;
+    cursor: pointer;
+    width: 50px !important;
+}
+
+span.uc span {
+    text-transform: uppercase;
+}
+
+.msg-container {
+    min-height: 40px;
+}
+
+#text, #unicode {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+span.txt {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.ucs {
+    background: #ff0000;
+}
+
+.warn {
+    background: red !important;
+    color: white !important;
+}
+
+.hoverColor {
+    background: darkblue !important;
+    color: white !important;
+}
+
+.linebreak {
+    font-size: 20px;
+}
+
+.counts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.counts.unicodes-container {
+    background: lightgray;
+    padding: 20px;
+}
+
+.counts .sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+
+.counts .sec span {
+    color: white;
+}
+
+.counts .unicodes {
+    flex-direction: row;
+    color: black;
+    font-size: 14px;
+}
+
+.counts span {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.counts .unicodes span {
+    font-size: 14px;
+}
+
+span#unicode {
+    font-size: 0.67em;
+}
+
+#text {
+    max-height: 20vh;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#unicode {
+    max-height: 25vh;
+    overflow-y: auto;
+}
+
+#uclist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#selectAllUc {
+    display: none;
+}
+
+#uclist span, #selectAllUc.act {
+    display: block;
+    padding: 5px;
+    border: 1px solid black;
+    background: #e01919;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#uclist span:hover, #selectAllUc.act:hover {
+    background-color: lightcoral;
+}
+
+/* GH Corner */
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+    0%, 100% {
+        transform: rotate(0)
+    }
+    20%, 60% {
+        transform: rotate(-25deg)
+    }
+    40%, 80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
